@@ -57,8 +57,12 @@
     "@oclif/command": "^1.8.0",
     "@oclif/config": "^1.17.0",
     "@oclif/plugin-help": "^3.2.2",
+    "@types/passport": "^1.0.6",
     "express": "^4.17.1",
+    "express-session": "^1.17.2",
     "open": "^8.2.1",
+    "passport": "^0.4.1",
+    "passport-google-oauth": "^2.0.0",
     "tslib": "^1.14.1"
   }
 }
