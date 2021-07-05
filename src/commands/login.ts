@@ -37,7 +37,7 @@ export class MyCommand extends Command {
       cb(null, user);
     });
      
-    passport.deserializeUser(function(obj, cb) {
+    passport.deserializeUser(function(obj:Express.User, cb) {
       cb(null, obj);
     });
 
@@ -60,6 +60,7 @@ export class MyCommand extends Command {
           done: any
         ) {
           console.log(accessToken);
+          console.log(profile);
           server.close();
           return done(null, userProfile);
         }
